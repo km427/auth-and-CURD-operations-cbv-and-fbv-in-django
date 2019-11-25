@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container" align="center">
+    <form method="post">
+        <br><br><br>
+        Update name:<input type="text" name="name" value="{{ id.name }}" size="50%"><br><br>
+        Update Email:<input type="email" name="email" value="{{ id.email }}" size="50%"><br><br>
+        Update Email:<input type="phno" name="phno" value="{{ id.phno }}" size="50%"><br><br>
+        <input type="submit" class="btn-success">
+        {% csrf_token %}
+    </form>
+</div>
+</body>
+</html>
